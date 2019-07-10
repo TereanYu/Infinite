@@ -199,6 +199,7 @@ namespace YU.ECS {
         public bool isEndGaming = false;
         public void Success()
         {
+            Physics.gravity = new Vector3(0f,5f,20f);
             isEndGaming = true;
             background.SetActive(false);
             flyCamera._enableMovement = false;
@@ -215,7 +216,7 @@ namespace YU.ECS {
             isEndMoveOut = true;
             yield return new WaitForSeconds(8);
             UIManager.Instance.ShowSuccessText();
-            yield return new WaitForSeconds(6);
+            yield return new WaitForSeconds(8);
             UIManager.Instance.ShowThanksText();
             yield return new WaitForSeconds(10);
             Application.Quit();

@@ -171,7 +171,7 @@ namespace YU.ECS
 
         private void Update()
         {
-            if (Input.GetKey(KeyCode.Space)&&Main.Instance.isStartGame&&isWatching&&!isFailing)
+            if (Input.GetKey(KeyCode.Space)&&Main.Instance.isStartGame&&isWatching&&!isFailing&&!Main.Instance.isEndGaming)
             {
                 MoveThem();
             }
