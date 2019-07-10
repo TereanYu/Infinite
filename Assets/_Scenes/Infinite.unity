@@ -269,7 +269,7 @@ MonoBehaviour:
   scale: 40
   stepLength: 300
   maxEndPointValue: 10
-  minEndPointValue: 4
+  minEndPointValue: -10
   isTeaching: 0
   isStartGame: 0
   isGenerateWorld: 0
